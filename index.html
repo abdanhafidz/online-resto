@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Warung - Japanese Cuisine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #dc143c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #dc143c;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff4757;
+        }
+        .hero {
+            background-color: #dc143c;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+        .menu-item-content {
+            padding: 15px;
+        }
+        .cta {
+            background-color: #dc143c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍜 Sakura Warung</h1>
+            <p>Authentic Japanese Cuisine Delivered to Your Doorstep</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Pesan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Rasakan Kelezatan Jepang di Rumah Anda</h2>
+            <p>Hidangan autentik, disajikan dengan cinta dan kualitas terbaik</p>
+            <a href="#order" class="cta">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <section id="menu" class="container">
+        <h2 style="text-align: center; margin: 20px 0;">Menu Pilihan Kami</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="/api/placeholder/400/250" alt="Ramen Spesial">
+                <div class="menu-item-content">
+                    <h3>Ramen Spesial</h3>
+                    <p>Ramen berkuah kaya dengan topping daging pilihan</p>
+                    <p><strong>Rp 65.000</strong></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/250" alt="Sushi Kombinasi">
+                <div class="menu-item-content">
+                    <h3>Sushi Kombinasi</h3>
+                    <p>Berbagai macam sushi dengan ikan segar</p>
+                    <p><strong>Rp 95.000</strong></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/250" alt="Gyoza Spesial">
+                <div class="menu-item-content">
+                    <h3>Gyoza Spesial</h3>
+                    <p>Pangsit ala Jepang dengan saus special</p>
+                    <p><strong>Rp 45.000</strong></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/api/placeholder/400/250" alt="Teriyaki Chicken">
+                <div class="menu-item-content">
+                    <h3>Teriyaki Chicken</h3>
+                    <p>Ayam panggang dengan saus teriyaki autentik</p>
+                    <p><strong>Rp 55.000</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="cta">
+        <div class="container">
+            <h2>Pesan Sekarang</h2>
+            <p>Hubungi kami melalui WhatsApp untuk pemesanan</p>
+            <a href="https://wa.me/6281234567890" target="_blank" style="color: white; text-decoration: none;">
+                <i class="fab fa-whatsapp"></i> +62 812-3456-7890
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sakura Warung. All Rights Reserved.</p>
+            <p>📍 Jakarta, Indonesia</p>
+        </div>
+    </footer>
+</body>
+</html>
